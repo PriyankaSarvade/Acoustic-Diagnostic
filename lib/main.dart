@@ -109,7 +109,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
   String _statusText = 'SYSTEM_READY';
   bool _isLoading = false;
   final AudioRecorder audioRecorder = AudioRecorder();
-  final String apiKey = 'AIzaSyAfYfm63W1RWJF6_Q6f3OZt8TScm2-ROTw'; 
+  final String apiKey = myGeminiKey; 
 
   Future<void> _handleScan() async {
     final hasPermission = await audioRecorder.hasPermission();
